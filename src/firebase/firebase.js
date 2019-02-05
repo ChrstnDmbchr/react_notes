@@ -1,10 +1,11 @@
 import firebase from 'firebase'
 import 'firebase/firestore';
+import dbconfig from '../config'
 
 const config = {
-    apiKey: "AIzaSyDHsRVYnOvyqHZehQWqwW7RODGYdPy5Yzo",
-    authDomain: "notes-52168.firebaseapp.com",
-    databaseURL: "https://notes-52168.firebaseio.com",
+    apiKey: dbconfig.FIREBASE_API_KEY,
+    authDomain: dbconfig.FIREBASE_AUTH_DOAMIN,
+    databaseURL: dbconfig.FIREBASE_DB_URL,
     projectId: "notes-52168",
     storageBucket: "notes-52168.appspot.com",
     messagingSenderId: "40090489308"
