@@ -5,7 +5,7 @@ Before project build, you will need to create `config.js` file in `/src` that wi
 ```
 const config = {
   FIREBASE_API_KEY: ,
-  FIREBASE_AUTH_DOAMIN: ,
+  FIREBASE_AUTH_DOMAIN: ,
   FIREBASE_DB_URL: ,
 }
 
