@@ -4,9 +4,9 @@ Before project build, you will need to create `config.js` file in `/src` that wi
 
 ```
 const config = {
-  FIREBASE_API_KEY: 'AIzaSyDHsRVYnOvyqHZehQWqwW7RODGYdPy5Yzo',
-  FIREBASE_AUTH_DOAMIN: 'notes-52168.firebaseapp.com',
-  FIREBASE_DB_URL: 'https://notes-52168.firebaseio.com',
+  FIREBASE_API_KEY: ,
+  FIREBASE_AUTH_DOAMIN: ,
+  FIREBASE_DB_URL: ,
 }
 
 export default config;
