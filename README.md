@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Before project build, you will need to create `config.js` file in `/src` that will store the information for the firebase db. Example file can be found below:
+
+```
+const config = {
+  FIREBASE_API_KEY: ,
+  FIREBASE_AUTH_DOMAIN: ,
+  FIREBASE_DB_URL: ,
+}
+
+export default config;
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
