@@ -22,14 +22,13 @@ const user = (state = initialState, action) => {
               isFetching: true,
               isAuthorizing: true,
           }
-          break;
+
       case FETCH_USER_ERROR:
           return {
               ...state,
               isFetching: false,
               error: action.payload
           }
-          break;
       case FETCH_USER_AUTHORIZED:
           return {
               ...state,
@@ -39,7 +38,6 @@ const user = (state = initialState, action) => {
               isAuthorized: true,
               profile: Object.assign({}, action.payload),
           }
-          break;
       case SET_USER_UNAUTHORIZED:
           return {
               ...state,

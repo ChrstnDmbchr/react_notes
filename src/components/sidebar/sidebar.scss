@@ -1,0 +1,15 @@
+.sidebar {
+    height: 10vh;
+    background: red; 
+
+    > div {
+        height: 100%;
+        text-align: center;
+        color: #fff;
+        background: #000;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
