@@ -11,21 +11,23 @@ import {
     TransitionGroup
 } from 'react-transition-group';
 
+import Login from '../login/login';
+import Main from '../main/main';
+
 import { connect } from 'react-redux';
 
-
-
 const mapStateToProps = state => {
-    return {
-        isAuthorized: state.user.isAuthorized
-    }
+
 }
 
 class Router extends Component {
     render() {
         return(
             <BrowserRouter>
-                
+                <Switch>
+                    <Route exact path="/" component={Main}/>
+                    <Route path="/login" component={Login} />
+                </Switch>
             </BrowserRouter>
         )
     }

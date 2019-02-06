@@ -11,6 +11,10 @@ const mapStateToProps = state => {
 };
 
 class Login extends Component {
+    componentWillReceiveProps (nextProps) {
+        if (nextProps.isAuthorized) this.props.history.push("/")
+    }
+    
     render() {
         const { onGoogleLogout, onGoogleLogin, isAuthorized, name } = this.props;
 

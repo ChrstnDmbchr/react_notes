@@ -3,16 +3,14 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import { store, persistor } from './store/store';
-import Login from './components/login/login';
-// import SideBar from './components/sidebar/sidebar';
-// import Note from './components/note/note';
+import Router from './components/router/router';
 
 export default class App extends React.Component {
     render() {
         return(
             <Provider store={store}>
                 <PersistGate loading={null} persistor={persistor}>
-                    <Login />
+                    <Router />
                 </PersistGate>
             </Provider>
         )
