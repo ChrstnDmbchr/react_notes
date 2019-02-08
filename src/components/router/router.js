@@ -6,10 +6,6 @@ import {
     BrowserRouter
 } from 'react-router-dom';
 
-import {
-    CSSTransition,
-    TransitionGroup
-} from 'react-transition-group';
 
 import Login from '../login/login';
 import Main from '../main/main';

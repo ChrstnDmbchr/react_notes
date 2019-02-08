@@ -16,9 +16,9 @@ class SideBar extends Component {
     render() {
         return(
             <div className='sidebar d-flex'>
-                <SideBarItem icon={'documentIcon'} size={34} callBack={this.testfunc}/>
-                <SideBarItem icon={'share'} size={34} callBack={this.testfunc}/>
-                <SideBarItem icon={'trashB'} size={34} callBack={this.testfunc}/>
+                <SideBarItem icon={'documentIcon'} classes={'sidebar__item'} size={32} callBack={this.testfunc}/>
+                <SideBarItem icon={'share'} classes={'sidebar__item'} size={32} callBack={this.testfunc}/>
+                <SideBarItem icon={'trashB'} classes={'sidebar__item'} size={32} callBack={this.testfunc}/>
             </div>
         )
     }

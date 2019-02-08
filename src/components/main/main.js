@@ -1,6 +1,8 @@
 import React, { Component }from 'react';
 import Note from '../note/note';
-import SideBar from '../sidebar/sidebar'
+import SideBar from '../sidebar/sidebar';
+import Header from '../header/header';
+import SplashScreen from '../splashscreen/splashscreen';
 
 import { connect } from 'react-redux';
 
@@ -18,7 +20,10 @@ class Main extends Component {
   render() {
       return(
           <div>
+            {/* <Header/>
             <Note />
+             */}
+            <SplashScreen/>
             <SideBar />
           </div>
       )
