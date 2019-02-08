@@ -12,7 +12,11 @@ const mapStateToProps = state => {
 
 class Login extends Component {
     componentWillReceiveProps (nextProps) {
-        if (nextProps.isAuthorized) this.props.history.push("/")
+        if (nextProps.isAuthorized) this.props.history.push("/");
+    }
+
+    componentDidMount () {
+        if (this.props.isAuthorized) this.props.history.push("/");
     }
     
     render() {
