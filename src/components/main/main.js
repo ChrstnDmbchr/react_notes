@@ -1,7 +1,6 @@
 import React, { Component }from 'react';
 import Note from '../note/note';
-import SideBar from '../sidebar/sidebar';
-import Header from '../header/header';
+import Navigation from '../navigation/navigation';
 import SplashScreen from '../splashscreen/splashscreen';
 
 import { connect } from 'react-redux';
@@ -17,21 +16,22 @@ class Main extends Component {
     if (!this.props.isAuthorized) this.props.history.push("/login");
   }
 
+  componentWillReceiveProps (nextProps) {
+    if (!nextProps.isAuthorized) this.props.history.push("/login");
+  }
+
   render() {
       return(
           <div>
-            {/* <Header/>
-            <Note />
-             */}
             <SplashScreen/>
-            <SideBar />
+            <Navigation />
           </div>
       )
   }
 }
 
 const mapDispatchToProps = state => {
-
+  return {}
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main);

@@ -6,6 +6,11 @@ import { store, persistor } from './store/store';
 import Router from './components/router/router';
 
 export default class App extends React.Component {
+
+    componentDidMount() {
+        store.subscribe(() => window.state = store.getState());
+    }
+
     render() {
         return(
             <Provider store={store}>

@@ -22,5 +22,3 @@ export let store = createStore(
 );
 
 export let persistor = persistStore(store);
-
-window.state = store.getState();

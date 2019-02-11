@@ -36,7 +36,7 @@ const user = (state = initialState, action) => {
               isFetched: true,
               isAuthorizing: false,
               isAuthorized: true,
-              profile: Object.assign({}, action.payload),
+              profile: action.payload,
           }
       case SET_USER_UNAUTHORIZED:
           return {

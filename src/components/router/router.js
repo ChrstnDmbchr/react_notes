@@ -13,7 +13,7 @@ import Main from '../main/main';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
-
+    return {}
 }
 
 class Router extends Component {
@@ -30,7 +30,7 @@ class Router extends Component {
 }
 
 const mapDispatchToProps = () => {
-
+    return {}
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Router);

@@ -26,7 +26,7 @@ export const googleLogin = (dispatch, getState) => {
                 };
 
                 dispatch(setUser(userProfile));
-
+                console.log(userProfile);
                 const userExists = await db.collection('auth').doc(email).get().then(resp => resp.exists);
 
                 if (userExists) return;
