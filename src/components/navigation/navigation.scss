@@ -1,7 +1,36 @@
 .sidebar {
     height: 5vh;
-    
+    position: relative;
+    z-index: 11;
     > div {
         color: #fff;
+    }
+}
+// change wrapper height -5vh
+.sidebar-slide {
+    display: flex;
+    height: 5vh;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.6);
+    
+    transition: transform .3s ease-in-out;
+    position: absolute;
+    z-index: 10;
+}
+
+.sidebar-slide.active {
+    transform: translateY(-5vh);
+}
+
+.sidebar-slide__btn {
+    flex-grow: 1;
+    border: none;
+    background: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    letter-spacing: 1px;    
+
+    &:last-of-type {
+        border-left: 1px solid #fff;
     }
 }
